@@ -115,18 +115,7 @@ We operationalized **Basil Bernstein’s code theory** into computable metrics.
 
 ---
 
-## ✉️ Contact & Citation
 
-If you use this code or data in your research, please cite:
-
-```bibtex
-@article{YourName2024Curriculum,
-  title={The Deep Structure of Curriculum: A Computational Comparative Analysis},
-  author={Your Name and Co-authors},
-  journal={Computers & Education (Under Review)},
-  year={2024}
-}
-```
 
 **Questions or Data Access?** Please open an [Issue](https://github.com/YourUsername/Curriculum-Analysis/issues) or contact the authors directly.
 
