@@ -1,0 +1,8 @@
+numpy
+pandas
+matplotlib
+seaborn
+networkx
+faiss-cpu
+sentence-transformers
+scikit-learn
