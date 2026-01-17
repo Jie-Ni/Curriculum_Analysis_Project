@@ -4,6 +4,7 @@
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18284324.svg)](https://doi.org/10.5281/zenodo.18284324)
 [![Status](https://img.shields.io/badge/Status-Under%20Review-orange?style=for-the-badge)]()
 
 </div>
@@ -20,12 +21,22 @@ Our findings reveal a **"Goal-Structure Paradox"**: while cognitive objectives a
 
 ---
 
+## 💾 Data Availability
+
+Due to repository size limits, the raw curriculum corpus and processed embedding indices are hosted on Zenodo.
+
+> **Dataset DOI:** [10.5281/zenodo.18284324](https://doi.org/10.5281/zenodo.18284324)
+
+Please download the dataset and extract the contents into the `data/` directory before running the analysis pipeline.
+
+---
+
 ## 📂 Repository Structure
 
 ```text
 Curriculum_Analysis/
 ├── data/
-│   ├── raw/                   # Raw text files (University syllabi/handbooks)
+│   ├── raw/                   # Raw text files (Extract Zenodo data here)
 │   ├── processed/             # Cleaned JSONL corpus
 │   └── embeddings/            # FAISS vector indices and metadata
 ├── output/
@@ -47,7 +58,7 @@ Curriculum_Analysis/
 
 ### 1. Clone the repository
 ```bash
-git clone [https://github.com/YourUsername/Curriculum-Analysis.git](https://github.com/YourUsername/Curriculum-Analysis.git)
+git clone https://github.com/YourUsername/Curriculum-Analysis.git
 cd Curriculum-Analysis
 ```
 
@@ -73,12 +84,13 @@ pip install -r requirements.txt
 
 To reproduce the results presented in the paper, execute the scripts in the following order. All scripts should be run from the root directory.
 
-### Step 1: Data Processing
-Converts raw curriculum documents into a standardized JSONL format.
+### Step 1: Data Preparation
+Ensure you have downloaded the data from Zenodo (DOI: 10.5281/zenodo.18284324) and placed it in `data/raw`.
+
+Run the processing script to convert documents into standardized JSONL format:
 ```bash
 python scripts/01_data_processing.py
 ```
-> **Note:** If no raw data is found in `data/raw`, the script will automatically generate synthetic demo data for testing purposes.
 
 ### Step 2: Vector Index Construction
 Generates semantic embeddings using `BAAI/bge-m3` and builds the FAISS retrieval index.
@@ -115,7 +127,18 @@ We operationalized **Basil Bernstein’s code theory** into computable metrics.
 
 ---
 
+## ✉️ Contact & Citation
 
+If you use this code or data in your research, please cite:
+
+```bibtex
+@article{YourName2024Curriculum,
+  title={The Deep Structure of Curriculum: A Computational Comparative Analysis},
+  author={Your Name and Co-authors},
+  journal={Computers & Education (Under Review)},
+  year={2024}
+}
+```
 
 **Questions or Data Access?** Please open an [Issue](https://github.com/YourUsername/Curriculum-Analysis/issues) or contact the authors directly.
 
