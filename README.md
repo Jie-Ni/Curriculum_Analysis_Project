@@ -58,7 +58,6 @@ Curriculum_Analysis/
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/YourUsername/Curriculum-Analysis.git
 cd Curriculum-Analysis
 ```
 
@@ -128,8 +127,6 @@ We operationalized **Basil Bernstein’s code theory** into computable metrics.
 ---
 
 
-
-**Questions or Data Access?** Please open an [Issue](https://github.com/YourUsername/Curriculum-Analysis/issues) or contact the authors directly.
 
 ---
 
