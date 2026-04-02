@@ -1,0 +1,39 @@
+# ============================================================
+# Curriculum Deep Structure Analysis - Dependencies
+# ============================================================
+
+# --- Core ML & NLP ---
+torch>=2.2.0
+sentence-transformers>=2.5.0
+
+# --- Vector Search ---
+faiss-cpu>=1.7.4                  # Use faiss-gpu if CUDA is available
+
+# --- LLM API ---
+openai>=1.12.0
+
+# --- Data Processing ---
+numpy>=1.26.0
+
+# --- PDF Parsing (optional, for M4) ---
+pdfplumber>=0.10.4
+
+# --- Chinese Segmentation (optional, for m4) ---
+jieba>=0.42.1
+
+# --- NLP & Embeddings ---
+scikit-learn>=1.4.0
+
+# --- Graph & Network Analysis ---
+networkx>=3.2.1
+python-louvain>=0.16              # Louvain community detection
+
+# --- Statistics ---
+scipy>=1.12.0
+
+# --- Visualization ---
+matplotlib>=3.8.3
+seaborn>=0.13.2
+
+# --- Utilities ---
+tqdm>=4.66.2                      # Progress bars (used by sentence-transformers)
